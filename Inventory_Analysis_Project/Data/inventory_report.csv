@@ -1,0 +1,9 @@
+item,category,inventory,damaged
+Apples,Fruit,120,5
+Bananas,Fruit,135,12
+Oranges,Fruit,-10,1
+Milk,Dairy,80,4
+Cheese,Dairy,65,2
+Yogurt,Dairy,95,6
+Chips,Snack,142,3
+Cookies,Snack,128,8
