@@ -1,0 +1,8 @@
+item,category,inventory,damaged,damage_rate%
+Apples,Fruit,120,5,4.17
+Bananas,Fruit,135,12,8.89
+Milk,Dairy,80,4,5
+Cheese,Dairy,65,2,3.08
+Yogurt,Dairy,95,6,6.32
+Chips,Snack,142,3,2.11
+Cookies,Snack,128,8,6.25
