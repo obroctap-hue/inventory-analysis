@@ -18,7 +18,7 @@ plt.savefig("output/damage_rate_by_category.png")
 plt.show()
 
 #Calculate and plot total damage
-impact = clean.groupby("category")["damaged"].sum()
+impact = clean.groupby("category")["damaged"].sum().reset_index()
 impact.plot(kind='bar')
 plt.title("Total Damaged Units by Category")
 plt.xlabel("Category")
@@ -39,3 +39,5 @@ plt.savefig("output/top_5_items_by_damage_rate.png")
 plt.show()
 
 clean.to_csv("output/clean_inventory.csv", index=False)
+impact.to_csv("output/impact.csv", index=False)
+top_items.to_csv("output/top_items.csv", index=False)
