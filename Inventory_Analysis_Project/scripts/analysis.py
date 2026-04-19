@@ -19,7 +19,8 @@ plt.show()
 
 #Calculate and plot total damage
 impact = clean.groupby("category")["damaged"].sum().reset_index()
-impact.plot(kind='bar')
+impact = impact.sort_values(by="damaged", ascending=False)
+impact.set_index("category").plot(kind='bar')
 plt.title("Total Damaged Units by Category")
 plt.xlabel("Category")
 plt.ylabel("Units Damaged")
